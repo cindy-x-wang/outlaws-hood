@@ -13,7 +13,7 @@ const usersRouter = require('./routes/users');
 const sessionRouter = require('./routes/session');
 const blockagesRouter = require('./routes/blockages');
 
-mongoose.connect('mongodb://localhost:27017/test');
+//mongoose.connect('mongodb://localhost:27017/test');
 
 const app = express();
 
