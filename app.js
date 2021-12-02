@@ -5,7 +5,7 @@ const logger = require('morgan');
 const handlebars = require('express-handlebars');
 const session = require('express-session');
 const history = require('connect-history-api-fallback');
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 require('dotenv').config();
 
 const indexRouter = require('./routes/index');
