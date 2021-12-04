@@ -87,7 +87,7 @@ import { eventBus } from '../main';
 import { sagaciousLuPummels, sagaciousLuPummels_RobinStyle, robinHood_becomeOutlaw, robinPummels_SagaciousStyle } from '../text/SagaciousLuPummels';
 import { WillStutely_robin, ChaoGai, WillStutely_outlaws, ChaoGai_robin } from '../text/WillStutely';
 import { SagaciousMeat, FriarTuck, SagaciousMeat_friar, FriarTuck_outlaw } from '../text/FriarTuck';
-import { SagaciousTree, RobinFeast } from '../text/WillowTree';
+import { SagaciousTree, RobinFeast, WillowTree_robin, RobinFeast_sagacious } from '../text/WillowTree';
 import VueMarkdown from 'vue-markdown';
 // import vSelect from "vue-select";
 import 'vue-select/dist/vue-select.css';
@@ -148,11 +148,11 @@ export default {
           quotes: {
             outlaw: {
               original: SagaciousTree,
-              translated: sagaciousLuPummels_RobinStyle
+              translated: WillowTree_robin
             },
             robinhood: {
               original: RobinFeast, 
-              translated: robinPummels_SagaciousStyle
+              translated: RobinFeast_sagacious
             }
           },
           images: {
