@@ -9,7 +9,7 @@ To begin, the home page allows you to toggle between stories from _The Merry Adv
 
 This format aims to highlight the broad similarities in these novels, which makes it possible to rewrite each excerpt using text from the other novel. It also brings out differences in characterization and tone, which point to specific differences in Western and Chinese conceptions about masculinity.
 
-As a fun tidbit, you can see which character from _Outlaws of the Marsh_ or _The Merry Adventures of Robin Hood_ you are most like by taking a short quiz on the [quiz](\quiz) tab!
+As a fun tidbit, you can see which character from _Outlaws of the Marsh_ or _The Merry Adventures of Robin Hood_ you are most like by taking a short quiz on the [quiz](/quiz) tab!
 
 ## Chinese Masculinity: _wen_ and _wu_
 
