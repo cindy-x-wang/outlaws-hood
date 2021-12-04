@@ -7,7 +7,7 @@
       <span v-else>
         Viewing Outlaw version
       </span>
-      <a href="#" @click="viewRobinhoodVersion = !viewRobinhoodVersion">Switch to 
+      <a href="#" @click="(viewRobinhoodVersion = !viewRobinhoodVersion); ($router.push({ query: { perspective: viewRobinhoodVersion ? 'robinhood' : 'outlaw' } }))">Switch to
         <span v-if="!this.viewRobinhoodVersion">Robinhood</span>
         <span v-else>Outlaw</span>
       </a>
@@ -15,7 +15,7 @@
     <div v-if="selectedStory">
       <div 
         class="back-button icon" 
-        @click="selectedStory=null"> 
+        @click="$router.push({name: 'Home'})">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z"/></svg>
         <span style="margin: 5px">Back to Home</span>
       </div>
@@ -43,7 +43,7 @@
           v-bind:key="story.name.robinhood"
           style=" background-position: center;"
           v-bind:style="{ 'background-image': 'url(' + (viewRobinhoodVersion ? story.images.robinhood : story.images.outlaw) + ')' }"
-          @click="selectedStory = story"
+          @click="selectStoryIndex(index)"
           >
             <div class="hover-text">
               <span v-if="viewRobinhoodVersion">{{story.name.robinhood}}</span>
@@ -235,12 +235,24 @@ export default {
     }
   },
   methods: {
+    selectStoryIndex (index) {
+      this.$router.push({ name: 'Story', params: { id: index+1 } })
+    },
     refreshView() {
       let q = {};
       if (this.$route) {
         q = this.$route.query;
       }
 
+      if (this.$route.params.id) {
+        this.selectedStory = this.stories[Number.parseInt(this.$route.params.id)-1]
+      } else {
+        this.selectedStory = null;
+      }
+
+      if (q.perspective) {
+        this.viewRobinhoodVersion = q.perspective === 'robinhood';
+      }
       if (q.character) {
         let currentChar = this.characters.filter(char => char.charID === q.character)[0];
         if (currentChar) {
