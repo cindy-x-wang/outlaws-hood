@@ -170,13 +170,6 @@ Meanwhile **Lu Da** ran through the greenwood. Gone was all the joy and brightne
 
 export const robinPummels_SagaciousStyle = `## Robin Hood Pummels the Lord of Nottingham
 
-As thus he walked along with a brisk step and a merry whistle, he came suddenly upon some foresters seated beneath a great oak tree. Fifteen there were in all, making themselves merry with feasting and drinking as they sat around a huge pasty, to which each man helped himself, thrusting his hands into the pie, and washing down that which they ate with great horns of ale which they drew all foaming from a barrel that stood nigh. Each man was clad in Lincoln green, and a fine show they made, seated upon the sward beneath that fair, spreading tree. Then one of them, with his mouth full, called out to Robin, "Hulloa, where goest thou, little lad, with thy one-penny bow and thy farthing shafts?"
-
-Then Robin grew angry, for no stripling likes to be taunted with his green years.
-
-"Now," quoth he, "my bow and eke mine arrows are as good as shine; and moreover, I go to the shooting match at Nottingham Town, which same has been proclaimed by our good Sheriff of Nottinghamshire; there I will shoot with other stout yeomen, for a prize has been offered of a fine butt of ale."
-
-
 In a few minutes, **he came suddenly upon some foresters seated beneath a great oak tree. Fifteen there were in all, making themselves merry with feasting and drinking as they sat around a huge pasty, to which each man helped himself, thrusting his hands into the pie, and washing down that which they ate with great horns of ale which they drew all foaming from a barrel that stood nigh. Each man was clad in Lincoln green, and a fine show they made, seated upon the sward beneath that fair, spreading tree. Then one of them, with his mouth full, called out to Robin, "Hulloa, where goest thou, little lad, with thy one-penny bow and thy farthing shafts?"**
 
 **Then Robin grew angry, for no stripling likes to be taunted with his green years.**

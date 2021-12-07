@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <div>
+    <div class="togglebox">
 
       <!-- Rounded switch -->
-      <span style="text-align: center;">
-        Outlaw
+      <span style="text-align: center; vertical-align: middle; font-size: 20px">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outlaws of the Marsh &nbsp; &nbsp;
       </span>
       <label class="switch">
         <input type="checkbox" v-model="viewRobinhoodVersion" @change="refreshPerspectiveQuery">
         <span class="slider round"></span>
       </label>
-      <span>
-        Robinhood
+      <span style="text-align: center; vertical-align: middle; font-size: 20px">
+        &nbsp; The Merry Adventures of Robin Hood
       </span>
     </div>
     <div v-if="selectedStory">
@@ -29,10 +29,10 @@
           {{this.selectedStory.name.outlaw}}
       </h1>
       <h3 v-if="viewRobinhoodVersion">
-        TODO: robinhood index
+        bolded text from <i>Outlaws of the Marsh</i>
       </h3>
       <h3 v-else>
-        TODO: outlaw index
+        bolded text from <i>The Merry Adventures of Robin Hood</i>
       </h3>
       <div class="float-container">
         <div class="float-child" style="text-align: justify">
@@ -518,6 +518,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.togglebox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
 
 </style>
