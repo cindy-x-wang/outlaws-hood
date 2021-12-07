@@ -6,19 +6,24 @@
     </article>
 
     <h1>Image Sources</h1>
+    <article style="text-align: justify; overflow-wrap: break-word;">
+      <vue-markdown :source='this.imageMarkdown'></vue-markdown>
+    </article>
+    <div style="height: 100px"/>
   </div>
 </template>
 
 <script>
 import VueMarkdown from 'vue-markdown'
-import { references } from '../text/references'
+import { references, imagerefs } from '../text/references'
 
 export default {
   name: 'References',
   components: { VueMarkdown },
   data: function () {
     return {
-      referencesMarkdown: references
+      referencesMarkdown: references,
+      imageMarkdown: imagerefs,
     }
   }
 }
